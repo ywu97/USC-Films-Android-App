@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"></include>
+<!--    android:visibility="invisible"-->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="411dp"
+        android:layout_height="620dp"
+        android:background="@color/darkgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            tools:context=".MainActivity">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/slider1"
+                android:layout_width="match_parent"
+                android:layout_height="432dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="1dp"
+                app:sliderIndicatorSelectedColor="@color/blue"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"></com.smarteist.autoimageslider.SliderView>
+
+            <TextView
+                android:id="@+id/MtextView1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="28dp"
+                android:paddingStart="20dp"
+                android:text="@string/topRated"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slider1" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/TopRatedMovRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="189dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/round_outline"
+                android:scaleY="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MtextView1">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/MtextView2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="28dp"
+                android:paddingStart="20dp"
+                android:text="@string/Popular"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TopRatedMovRecycler" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popMovRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="189dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/round_outline"
+                android:scaleY="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MtextView2"></androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgray"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="@string/TMDB"
+                android:textColor="@color/blue"
+                android:textColorLink="@color/blue"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popMovRecycler"></TextView>
+            <TextView
+                android:id="@+id/footer_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/darkgray"
+                android:gravity="center_horizontal"
+                android:text="Developed by Yueting Wu"
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/footer"></TextView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+<!--    android:visibility="visible"-->
+    <ScrollView
+        android:id="@+id/scrollViewTV"
+        android:layout_width="411dp"
+        android:layout_height="620dp"
+        android:background="@color/darkgray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:context=".MainActivity">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/slider2"
+                android:layout_width="match_parent"
+                android:layout_height="432dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="1dp"
+                app:sliderIndicatorSelectedColor="@color/blue"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"></com.smarteist.autoimageslider.SliderView>
+
+            <TextView
+                android:id="@+id/TVtextView1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="28dp"
+                android:paddingStart="20dp"
+                android:text="@string/topRated"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/slider2" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/TopRatedTVRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="189dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/round_outline"
+                android:scaleY="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVtextView1"></androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/TVtextView2"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="28dp"
+                android:paddingStart="20dp"
+                android:text="@string/Popular"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TopRatedTVRecycler" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popTVRecycler"
+                android:layout_width="wrap_content"
+                android:layout_height="189dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/round_outline"
+                android:scaleY="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVtextView2"/>
+
+
+            <TextView
+                android:id="@+id/footer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgray"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="@string/TMDB"
+                android:textColor="@color/blue"
+                android:textColorLink="@color/blue"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popTVRecycler"></TextView>
+            <TextView
+                android:id="@+id/footer2_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/darkgray"
+                android:gravity="center_horizontal"
+                android:text="Developed by Yueting Wu"
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/footer2"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+<FrameLayout
+    android:id="@+id/loadingBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray">
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:progressTint="@color/midblue"
+        android:progress="80"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="190dp"
+        android:indeterminateTint="@color/midblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Widget.AppCompat.ProgressBar"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/loadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="177dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBar" />
+</FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

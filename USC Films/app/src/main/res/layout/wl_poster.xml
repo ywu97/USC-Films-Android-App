@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/WLCardView"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewWL"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:background="@drawable/frame"
+                android:scaleType="centerCrop"
+                android:foreground="@drawable/trending_gradient_shape"
+                android:scaleY="1.2"
+                android:scaleX="1.2"
+                />
+            <TextView
+                android:id="@+id/WLremoveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:drawableBottom="@drawable/ic_baseline_remove_circle_outline_24"
+                android:layout_alignEnd="@id/imageViewWL"
+                android:layout_alignBottom="@id/imageViewWL"/>
+            <TextView
+                android:id="@+id/categorytextViewWL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:layout_alignStart="@+id/imageViewWL"
+                android:layout_alignBottom="@+id/imageViewWL"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

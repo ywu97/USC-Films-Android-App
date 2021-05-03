@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">USC Films</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_watchlist">Watchlist</string>
+    <string name="action_movies">Movies</string>
+    <string name="action_tvshows">TV Shows</string>
+    <string name="topRated">Top-Rated</string>
+    <string name="Popular">Popular</string>
+<!--    <string name="footer">"Powered By <a href="https://www.themoviedb.org/"><span style = "text-decoration:none">TMDB</span></a>-->
+<!--        \n Developed By Yueting Wu"-->
+<!--    </string>-->
+    <string name="TMDB">Powered By <span><a href="https://www.themoviedb.org/">TMDB</a></span></string>
+    <string name="loading">Loading...</string>
+</resources>

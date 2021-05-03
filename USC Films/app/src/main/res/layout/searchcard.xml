@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/darkgray"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/searchImg"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:background="@drawable/frame"
+                android:scaleType="centerCrop"
+                android:scaleX="1.1"
+                android:foreground="@drawable/trending_gradient_shape"
+                />
+
+
+            <TextView
+                android:id="@+id/searchCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:shadowColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Movie"
+                android:textColor="@color/white"
+                android:layout_alignStart="@id/searchImg"
+                android:layout_alignTop="@id/searchImg"
+                />
+            <TextView
+                android:id="@+id/searchYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="(2019)"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:shadowColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="3dp"
+                android:layout_alignTop="@id/searchImg"
+                android:layout_toEndOf="@id/searchCategory"/>
+
+            <TextView
+                android:id="@+id/SearchstarIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_star_rate_24"
+                android:layout_toStartOf="@+id/searchStar"
+                android:layout_marginTop="15dp"
+                android:layout_alignTop="@id/searchImg"/>
+            <TextView
+                android:id="@+id/searchStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="5.5"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:shadowColor="@color/black"
+                android:textColor="@color/white"
+                android:layout_alignEnd="@id/searchImg"
+                android:layout_alignTop="@id/searchImg"/>
+
+            <TextView
+                android:id="@+id/SearchTAndN"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/searchImg"
+                android:layout_alignBottom="@id/searchImg"
+                android:layout_alignEnd="@id/searchImg"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="1"
+                android:shadowColor="@color/black"
+                android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

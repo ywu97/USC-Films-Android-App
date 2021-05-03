@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="189dp"
+        android:background="@drawable/round_outline"
+        android:foreground="@drawable/trending_gradient_shape"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="15dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/nametextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="avangers"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignStart="@+id/imageView"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/idtextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="12345"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignStart="@+id/imageView"-->
+<!--        android:layout_alignBottom="@+id/imageView"/>-->
+
+    <TextView
+        android:id="@+id/popuptextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_baseline_more_vert_24"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/categorytextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="tv"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignEnd="@+id/imageView"-->
+<!--        android:layout_alignTop="@+id/imageView"/>-->
+
+</RelativeLayout>

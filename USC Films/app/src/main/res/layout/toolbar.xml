@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <Button-->
+<!--            android:id="@+id/TitleHome"-->
+<!--            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/app_name"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+<!--            android:textSize="28sp"-->
+<!--            android:drawableLeft="@drawable/toolbar_36"-->
+<!--            app:iconTint="@color/blue"></Button>-->
+        <TextView
+            android:id="@+id/TitleHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="28sp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/toolbar_36"
+            app:iconTint="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/moviePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginStart="250dp"
+            android:clickable="true"
+            android:text="@string/action_movies"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="30dp"></TextView>
+
+        <TextView
+            android:id="@+id/tvPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/moviePage"
+            android:clickable="true"
+            android:text="@string/action_tvshows"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="30dp"></TextView>
+    </RelativeLayout>
+</RelativeLayout>

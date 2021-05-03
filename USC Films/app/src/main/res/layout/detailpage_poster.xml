@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageViewD"
+        android:layout_width="130dp"
+        android:layout_height="189dp"
+        android:background="@drawable/round_outline"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="15dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/nametextViewD"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="avangers"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignStart="@+id/imageViewD"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/idtextViewD"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="12345"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignStart="@+id/imageViewD"-->
+<!--        android:layout_alignBottom="@+id/imageViewD"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/categorytextViewD"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="tv"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignEnd="@+id/imageViewD"-->
+<!--        android:layout_alignTop="@+id/imageViewD"/>-->
+
+</RelativeLayout>
